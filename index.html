@@ -1,29 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SecureNext</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SecureNext - Credential Manager</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      color: #cbd5e1;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 50px auto;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 25px;
+      margin: 15px;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      background: #0b1220;
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>SecureNext</h1>
-  <p>
-    SecureNext is a secure credential manager app that helps users store,
-    protect, and back up sensitive data safely.
-  </p>
 
-  <h3>Legal</h3>
-  <ul>
-    <li>
-      <a href="https://docs.google.com/document/d/e/2PACX-1vRE7lq4JH72cXXLq1vXv_roXEqWVu44yrsAkhvFUtS8G53nYM9Jxsvvja503VhbJKJjpM81B_23bfPG/pub" target="_blank">
-        Privacy Policy
-      </a>
-    </li>
-    <li>
-      <a href="https://docs.google.com/document/d/e/2PACX-1vSHRsV0u6tQyiadBM07m_jv0SEvsl-aXamciNH70IA3TXXxCA4lqXzdSWd9Bq_LxpJYi4Z3BAeHaWKK/pub" target="_blank">
-        Terms of Service
-      </a>
-    </li>
-  </ul>
+  <!-- HERO SECTION -->
+  <header>
+    <h1>SecureNext</h1>
+    <p>
+      SecureNext is a modern credential manager built for software professionals.
+      Store passwords, secrets, notes, and sensitive files securely — all encrypted locally on your device.
+    </p>
+  </header>
 
-  <p>Contact: aravindhkumar146@gmail.com</p>
+  <!-- FEATURES -->
+  <section class="features">
+
+    <div class="card">
+      <h3>🔐 Local Encryption</h3>
+      <p>
+        All your credentials are stored securely with strong encryption.
+        Nothing is uploaded to external servers.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📂 Backup & Restore</h3>
+      <p>
+        Export encrypted backups and restore anytime with your master password.
+        Safe and reliable recovery.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Built for Developers</h3>
+      <p>
+        Perfect for IT professionals managing multiple logins,
+        cloud accounts, SSH keys, API tokens, and secrets.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🛡️ Privacy First</h3>
+      <p>
+        SecureNext never collects personal data.
+        Your information stays only with you.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Legal Links</strong></p>
+
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a>
+    </p>
+
+    <p>
+      Contact Support: <strong>aravindhkumar146@gmail.com</strong>
+    </p>
+
+    <p>
+      © 2026 SecureNext. All rights reserved.
+    </p>
+  </footer>
+
 </body>
 </html>
